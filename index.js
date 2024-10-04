@@ -1,7 +1,8 @@
 const express =require("express");
 const myConnection=require("./src/Config")
 var bodyParser = require('body-parser')
-const router=require("./src/Route/Route")
+const router=require("./src/Route/Route");
+const eventEmitter = require("./src/Events/Events");
 const app = express();
 (app.use(bodyParser.urlencoded({ extended: true })))
 const port =7000;
